@@ -1,0 +1,148 @@
+
+00c07b34 = \*.dll
+00c07beb = drv
+00c089e9 = {%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}
+00c096d4 = ???????? = CB8555CC11D19128C0009BADFFFDD84F
+00c096fa = ???????? = DC12A68711CF737FAA004D88242E4B00
+00c09720 = ???????? = 674B669811D0EE92C00071ADFFFDD84F
+00c09746 = ???????? = 44ACA67411D0E8FCC0007CA02088B64F
+00c0976f = __ProviderArchitecture
+00c097d0 = ROOT\CIMV2
+00c09807 = ID
+00c09822 = SELECT * FROM Win32_ShadowCopy
+00c0989f = WQL
+00c098ba = Win32_ShadowCopy.ID='%s'
+00c09e59 = Global\%.8x%.8x%.8x%.8x
+00c0a14f = Times New Roman
+00c0a471 = .bmp
+00c0a550 = Control Panel\Desktop
+00c0a5ef = WallPaper
+00c0a655 = WallpaperStyle
+00c0a7ec = -wall
+00c0a81c = -pass
+00c0a950 = WinSta0\Default
+00c0af29 = EventLog
+00c0b007 = SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels
+00c0b0df = SYSTEM\CurrentControlSet\Services\EventLog
+00c0b186 = O:BAG:SYD:(A;;0x1;;;SY)(A;;0x5;;;BA)(A;;0x1;;;LA)
+00c0b23f = Enabled
+00c0b265 = ChannelAccess
+00c0bb34 = -psex
+00c0bb1e = -gspd
+00c0bb64 = -pass
+00c0bc5d = \\.\pipe\%s
+00c0c78e = Z:\
+00c0d690 = dllhost.exe
+00c0d775 = ???????? = 6EDD6D744E75C00774E56AB74CE29509
+00c0d79e = Elevation:Administrator!new:{3E5FC7F9-9A51-4367-9063-A120244FBEC7}
+00c0d9aa = %s.README.txt
+00c0dad6 = WINSPOOL
+00c0db47 = Consolas
+00c0dd28 = office
+00c0dd5d = onenote
+00c0e789 = Control Panel\International
+00c0e837 = LocaleName
+00c0e898 = sLanguage
+00c0e953 = SOFTWARE\Microsoft\Windows NT\CurrentVersion
+00c0ea28 = ProductName
+00c0ed6c = %.8x%.8x%.8x%.8x%
+00c0ef1c = POST
+00c0f2e9 = ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+00c0f363 = %s=%s
+00c0f4b2 = %s=%s
+00c0f4ca = %.8x%.8x%.8x%.8x%
+00c0f4fa = ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+00c11368 = \\%s\
+00c0f715 = %u.%u
+00c11435 = ???????? = FD8256D011CEFD156002C4AB53759E8C
+00c1145e = ????? = 001677D011CEFD166002C4AB53759E8C
+00c11484 = LDAP://rootDSE
+00c114fe = defaultNamingContext
+00c11571 = LDAP://CN=Computers,
+00c1162c = dNSHostName
+00c11663 = \\%s\
+00c11e54 = \\.\pipe\{%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}
+00c12515 = ExchangeInstallPath
+00c12583 = Program Files
+00c125f0 = MailBox
+00c1297e = SOFTWARE\%s
+00c129b5 = hScreen
+00c1372e = %02X
+00c1381c = Software\Microsoft\Windows\CurrentVersion\Group Policy\Status
+00c141ba = \\.\pipe\%s
+00c14278 = -safe
+00c145fd = \\%s.%s\
+00c1466b = \\.\pipe\%s
+00c1479d = \\.\pipe
+00c1481d = {%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}
+00c14b7b = WinSta0\Default
+00c14db6 = ADMIN$
+00c14ddf = IPC$
+00c14e01 = %spipe\%s
+00c14e31 = %%SystemRoot%%\Temp\%s.exe -k LocalServiceNetworkRestricte
+00c14f15 = d -pass %s
+00c14f56 = %sADMIN$\Temp\%s.exe
+00c14fb0 = %sADMIN$\Temp
+00c15447 = %02X
+00c154cf = ???????? = FD8256D011CEFD156002C4AB53759E8C
+00c154f8 = ??????? = 001677D011CEFD166002C4AB53759E8C
+00c1551e = LDAP://rootDSE
+00c15587 = defaultNamingContext
+00c1560a = LDAP://CN=Policies,CN=System,%s
+00c156db = displayName
+00c15792 = distinguishedName
+00c15892 = %02X
+00c15994 = Software\Microsoft\Windows\CurrentVersion\Group Policy\Status
+00c15b61 = ADMIN$
+00c15baa = IPC$
+00c15be0 = %spipe\%s
+00c15caa = %sADMIN$\Temp
+00c15d11 = %sADMIN$\Temp\%s.exe
+00c15e27 = %%SystemRoot%%\Temp\%s.exe
+00c161d1 = ???????? = FD8256D011CEFD156002C4AB53759E8C
+00c161fa = LDAP://rootDSE
+00c16263 = defaultNamingContext
+00c163b9 = Files.xml
+00c163d8 = Files
+00c16402 = Services
+00c16423 = Services.xml
+00c1645b = Preferences
+00c164a2 = ScheduledTasks
+00c164e0 = ScheduledTasks.xml
+00c16512 = NetworkShare
+00c16560 = NetworkShares
+00c16541 = NetworkShares.xml
+00c16591 = %04d-%02d-%02d %02d:%02d:%02d
+00c16625 = {%08lX-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}
+00c167cb = GPT.INI
+00c1683f = 2621892
+00c16857 = [General]
+Version=%s
+displayName=%s
+00c16c24 = \\%s\sysvol\%s\scripts\
+00c16e65 = %TempDir%
+00c170c5 = NT AUTHORITY\SYSTEM
+00c17322 = Registry.pol
+00c1735d = comment.cmtx
+00c1783c = ???????? = FD8256D011CEFD156002C4AB53759E8C
+00c1787f = gPCMachineExtensionNames
+00c1796b = gPCUserExtensionNames
+00c17a46 = versionNumber
+00c17a81 = 2621892
+00c17c89 = LDAP://%s/DC=%s,DC=%s
+00c17d7a = LDAP://DC=%s,DC=%s
+00c17e25 = LDAP://CN=%s,CN=Policies,CN=System,DC=%s,DC=%s
+00c17fa9 = ??????? = EA50272311D1A23D0000D3A7E37175F8
+00c17fd2 = ??????? = EA50272211D1A23D0000D3A7E37175F8
+00c181ab = ADMIN$
+00c181ec = IPC$
+00c18226 = %spipe\%s
+00c18310 = %sADMIN$\Temp
+00c1837b = %sADMIN$\Temp\%s.exe
+00c184cb = %%SystemRoot%%\Temp\%s.exe
+00c186ea = ??????? = EA50272311D1A23D0000D3A7E37175F8
+00c18713 = ??????? = EA50272211D1A23D0000D3A7E37175F8
+00c1878c = LDAP://%s
+00c188df = -gdel
+00c1890f = -pass
+
