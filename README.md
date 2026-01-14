@@ -158,7 +158,7 @@ Using x64dbg, I first change some settings, I enable breakpoint on entry so that
 I used ScyllaHide to dump the memory region and get the next payload. Although, I can't confirm quite yet what the payload is, I transfered the dump to my kali vm. In Kali I checked the dump with DIE again, and it confirmed that I was successful.
 
 # Stage 1 – New Payload, New Problems
-## First impressions**
+## First impressions
 DIE reports:
 - 32-bit
 - No compiler signature
