@@ -219,6 +219,12 @@ Now that I've found out how the binary hides its imports, what's up with the lac
 # Mechanism
 The core mechanism behind the dropper is executing x32 shellcode. This is achieved via a direct call to RWX memory that contains the decrypted payload. The payload is decrypted inside the memory region by a TEA/TEAX derived decryption cycle. The encrypted payload is dropped into the region statically.
 
+## Control Flow Diagram
+
+![Control Flow Diagram of Stage 0](https://raw.githubusercontent.com/VeryCuteLookingCat/Lockbit-Black-Loader-Analysis/refs/heads/main/Stage0_Control_Flow.drawio.png)
+
+Made with [drawio.](https://app.diagrams.net/)
+
 # YARA Rules
 YARA can temporarily surface this loader because Stage 0 exposes multiple low-cost static invariants that the writer would have to meaningfully redesign to remove. Some temporary solutions can include: Detecting the decryption cycle is also plausible as it uses 32 fixed rounds, two 32 bit words per block, Feistel mixing, shifting and XOR. The large continous encrypted payload in the binary can also be detected. 
 > These YARA rules should not serve as the final solution to detecting this lockbit varient and should only be for short term fixes. These rules are for educational purposes.
@@ -286,6 +292,27 @@ While this solution doesn't prevent allocation, It detects impossible situations
 
 # Main Payload
 
-# Mechanism
+## Mechanism
 
 This payload is executed as shellcode but appears to be written in C and converted. The protections on this payload include string encryption and import hiding. The first thing this payload does is allocate heap with the size of `0x41002`. This heap is used to store polymorphic shellcode that decrypts a pointer to the imports, passes in arguments, and returns requirements. Each shellcode stub is `0x10` bytes and has 5 total mutations. These mutations include XOR, ROT14 and arithmetic. The string encryption is a single function that loops through an array and xor's each value by `0x47063fc8` and uses the bitwise NOT operator. Some strings didn't decode to any ASCII characters and as such, will be replaced with question marks. The full list of strings can be accessed [here](https://github.com/VeryCuteLookingCat/Lockbit-Black-Loader-Analysis/blob/main/strings.txt). 
+
+### Control Flow Diagram
+
+![Control Flow Diagram of Stage 1](https://raw.githubusercontent.com/VeryCuteLookingCat/Lockbit-Black-Loader-Analysis/refs/heads/main/Stage1_Control_Flow.drawio.png)
+
+Made with [drawio.](https://app.diagrams.net/)
+
+## Defensive Implications
+
+Stage 1 runs purely in memory as shellcode, bypassing traditional PE-based mitigations. Static scanning is ineffective due to:
+- Polymorphic stubs for imports, breaking CFG reconstruction
+- Encrypted strings and import hashing
+- Heap-resident code and RWX allocations
+
+Effective monitoring shifts from signature-based AV to behavioral detection:
+
+- EDR style monitoring of anomalous memory regions and heap allocations
+- Control Flow Guard to catch execution outside module bounds
+- Arbitrary Code Guard to prevent execution of dynamically generated code
+
+These characteristics explain why Stage 1 evades Stage 0-targeted mitigations and why defenders must correlate runtime memory behavior rather than rely purely on static signatures.
